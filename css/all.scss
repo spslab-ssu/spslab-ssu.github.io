@@ -17,25 +17,29 @@
   margin-bottom: 2em;
 }
 
-/* 기본 */
+/* 기본 — 높이를 기준으로 정렬, 너비는 원본 비율에 따라 자동 결정 */
+/* (가로/세로 사진을 따로 지정할 필요 없이 자동 배치) */
 .image-grid img {
-  width: 30%;
-  height: auto;
-  object-fit: cover;
-      /* 원본 비율 유지 */
+  height: 320px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;   /* 잘림 없이 원본 비율 유지 */
+  border-radius: 4px;
 }
 
 /* 태블릿 */
 @media (max-width: 900px) {
   .image-grid img {
-    width: 45%;
+    height: 260px;
   }
 }
 
 /* 모바일 */
 @media (max-width: 600px) {
   .image-grid img {
+    height: auto;
     width: 100%;
+    max-width: 100%;
   }
 
   .image-grid.portrait img {

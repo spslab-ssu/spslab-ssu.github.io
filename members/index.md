@@ -14,8 +14,7 @@ footer-dark: true
 {% include section.html %}
 
 <div class="sec-head">
-  <h2>Principal Investigator</h2>
-  <div class="sec-head_sub">지도교수</div>
+  <h2>Professor</h2>
 </div>
 
 {%
@@ -29,7 +28,6 @@ footer-dark: true
 
 <div class="sec-head">
   <h2>Graduate Students</h2>
-  <div class="sec-head_sub">대학원생</div>
 </div>
 
 {%
@@ -43,7 +41,6 @@ footer-dark: true
 
 <div class="sec-head">
   <h2>Undergraduate Researchers</h2>
-  <div class="sec-head_sub">학부연구생</div>
 </div>
 
 {%
@@ -56,8 +53,7 @@ footer-dark: true
 {% include section.html %}
 
 <div class="sec-head">
-  <h2>Alumni</h2>
-  <div class="sec-head_sub">졸업·수료 학부연구생</div>
+  <h2>Past Members</h2>
 </div>
 
 <div class="alumni">
