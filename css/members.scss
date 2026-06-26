@@ -1,0 +1,82 @@
+---
+---
+
+@import "palettes";
+@import "theme";
+@import "mixins";
+
+// inline icon next to a page <h1>
+.section-icon {
+  color: $accent;
+  margin-right: 6px;
+}
+
+// centered section header (icon tile + h2 + sub)
+.sec-head {
+  text-align: center;
+
+  .sec-head_icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: $light-blue-50;
+    color: $light-blue-700;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  .sec-head_sub {
+    font-family: $sans;
+    font-size: 0.85rem;
+    color: $gray-600;
+    margin-top: 2px;
+  }
+}
+
+// alumni cohort rows
+.alumni {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: left;
+
+  .alumni-cohort {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    flex-wrap: wrap;
+    padding: 12px 4px;
+    border-bottom: 1px dashed $gray-300;
+  }
+
+  .alumni-period {
+    flex: 0 0 auto;
+    font-family: $sans;
+    font-size: 0.8rem;
+    font-weight: $semi-bold;
+    color: $white;
+    background: $blue-gray-500;
+    padding: 3px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  .alumni-names {
+    flex: 1 1 auto;
+    font-family: $sans;
+    color: $gray-800;
+  }
+}
+
+// accent the portrait role badge
+// (use a.portrait to outrank portrait.scss's `.portrait .role` regardless of load order)
+a.portrait .role {
+  color: $accent;
+  border: 1px solid $light-blue-100;
+}

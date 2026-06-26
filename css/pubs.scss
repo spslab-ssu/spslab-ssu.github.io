@@ -1,0 +1,169 @@
+---
+---
+
+@import "palettes";
+@import "theme";
+@import "mixins";
+
+$ink: $indigo-900;
+
+// ── in-page jump tabs (from Option A) ────────────────────────────────
+.jump-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 8px auto 0;
+  max-width: 880px;
+}
+
+a.jump {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: $sans;
+  font-size: 0.85rem;
+  font-weight: $medium;
+  text-decoration: none;
+  padding: 7px 16px;
+  border-radius: 999px;
+  color: $ink;
+  background: $white;
+  border: 1px solid $gray-300;
+  transition: background $fast, color $fast, border-color $fast, transform $fast;
+
+  .jump_count {
+    font-size: 0.72rem;
+    font-weight: $semi-bold;
+    color: $light-blue-700;
+    background: $light-blue-50;
+    border-radius: 999px;
+    padding: 1px 8px;
+  }
+
+  &:hover {
+    background: $ink;
+    color: $white;
+    border-color: $ink;
+    transform: translateY(-1px);
+
+    .jump_count {
+      background: rgba(255, 255, 255, 0.2);
+      color: $white;
+    }
+  }
+}
+
+// ── publication list (Option B info format, themed to the original) ──
+.pubs {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  counter-reset: p;
+  max-width: 880px;
+  text-align: left;
+
+  > li {
+    counter-increment: p;
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 14px;
+    padding: 16px 2px;
+    border-bottom: 1px solid $gray-200;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &::before {
+      content: counter(p);
+      font-size: 0.8rem;
+      font-weight: $semi-bold;
+      color: $gray-500;
+      padding-top: 3px;
+      font-variant-numeric: tabular-nums;
+    }
+  }
+
+  .me {
+    color: $black;
+    font-weight: $bold;
+  }
+}
+
+// journal entry: title / authors+journal / link on separate lines
+.pub_title {
+  color: $black;
+  font-weight: $semi-bold;
+  line-height: 1.5;
+}
+
+.pub_meta {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: $gray-600;
+  line-height: 1.55;
+
+  .venue {
+    color: $light-blue-700;
+    font-weight: $semi-bold;
+  }
+}
+
+.pub_link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 7px;
+  font-size: 0.84rem;
+  font-weight: $semi-bold;
+  color: $accent;
+  text-decoration: none;
+
+  i {
+    font-size: 0.72rem;
+  }
+
+  &:hover {
+    color: $ink;
+  }
+}
+
+.pub_tag {
+  display: inline-block;
+  font-family: $sans;
+  font-size: 0.74rem;
+  font-weight: $semi-bold;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: $light-blue-50;
+  color: $light-blue-700;
+
+  &.is-review {
+    background: $gray-100;
+    color: $gray-600;
+  }
+}
+
+// conference entry: single flowing block, colors only (no line breaks)
+.pub_conf {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: $gray-700;
+
+  .ptitle {
+    color: $black;
+    font-weight: $semi-bold;
+  }
+
+  .venue {
+    color: $light-blue-700;
+    font-weight: $semi-bold;
+  }
+
+  .me {
+    color: $black;
+    font-weight: $bold;
+    border: 0;
+  }
+}

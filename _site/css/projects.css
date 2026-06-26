@@ -1,0 +1,27 @@
+.proj-list { max-width: 940px; margin: 0 auto; text-align: left; }
+
+.proj-group { display: flex; align-items: center; gap: 12px; font-family: "IBM Plex Sans KR", "Poppins", "Noto Serif KR", sans-serif; font-size: 0.82rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #757575; margin: 0 0 18px; }
+
+.proj-group::after { content: ""; flex: 1; height: 1px; background: #eeeeee; }
+
+.proj { text-align: left; padding: 22px 24px; background: #ffffff; border: 1px solid #eeeeee; border-radius: 10px; box-shadow: 0 2px 10px 0 rgba(20, 24, 60, 0.08); margin-bottom: 14px; transition: box-shadow 0.25s ease, transform 0.25s ease; }
+
+.proj:hover { box-shadow: 0 8px 28px 0 rgba(20, 24, 60, 0.16); transform: translateY(-2px); }
+
+.proj:last-child { margin-bottom: 0; }
+
+.proj_title { font-family: "IBM Plex Sans KR", "Poppins", "Noto Serif KR", sans-serif; font-weight: 700; font-size: 1.08rem; color: #000000; margin: 0 0 11px; line-height: 1.4; }
+
+.proj_meta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+
+.proj_desc { font-size: 0.94rem; color: #616161; margin: 0; line-height: 1.7; text-align: left; }
+
+.chip { display: inline-flex; align-items: center; gap: 6px; font-family: "IBM Plex Sans KR", "Poppins", "Noto Serif KR", sans-serif; font-size: 0.76rem; font-weight: 600; padding: 4px 12px; border-radius: 999px; background: #f5f5f5; color: #616161; border: 1px solid #eeeeee; white-space: nowrap; }
+
+.chip i { font-size: 0.7rem; opacity: 0.85; }
+
+.chip--accent { background: #e1f5fe; color: #0288d1; border-color: transparent; }
+
+.chip--solid { background: #1a237e; color: #ffffff; border-color: transparent; }
+
+/*# sourceMappingURL=projects.css.map */

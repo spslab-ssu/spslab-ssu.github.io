@@ -1,26 +1,20 @@
 ---
 title: News
+description: Latest news and updates from the SPS Lab.
 nav:
   order: 5
   tooltip: News
 ---
 
-## <i class="fas fa-feather-alt"></i>News
+<h1><i class="fas fa-bullhorn section-icon"></i> News</h1>
 
 {% include section.html %}
 
-
-
-{% include list.html data="posts" component="post-excerpt" %}
-
-
-
-<!-- Twitter embeds from https://publish.twitter.com/ -->
-<!--
-<a class="twitter-timeline" data-width="400" data-height="400" href="https://twitter.com/GreeneScientist?ref_src=twsrc%5Etfw">Tweets by GreeneScientist</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-{:.center}
-
-<a href="https://twitter.com/GreeneScientist?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @GreeneScientist</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<a href="https://twitter.com/intent/tweet?screen_name=GreeneScientist&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @GreeneScientist</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-{:.center}
--->
+<div class="news-list">
+{% for post in site.posts %}
+  <div class="news-item">
+    <span class="news-date">{{ post.date | date: "%Y.%m" }}</span>
+    <a class="news-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </div>
+{% endfor %}
+</div>

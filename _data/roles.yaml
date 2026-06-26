@@ -1,27 +1,27 @@
-pi:
-  icon: fas fa-microscope
-  text: Professor
+# Member roles — keys must match the `role:` field used in _members/*.md
+#   and the filters in members/index.md (otherwise the badge silently disappears).
 
+prof:
+  icon: fas fa-chalkboard-teacher
+  text: Principal Investigator
+
+grad:
+  icon: fas fa-graduation-cap
+  text: Graduate Student
+
+ug:
+  icon: fas fa-user-graduate
+  text: Undergraduate Researcher
+
+alum_ug:
+  icon: fas fa-user-clock
+  text: Alumnus (Undergraduate)
+
+# generic / reserved
 postdoc:
   icon: fas fa-glasses
   text: Postdoctoral Researcher
 
-phd:
-  icon: fas fa-graduation-cap
-  text: PhD Student
-
-master:
-  icon: fas fa-graduation-cap
-  text: Master Student
-  
-undergrad:
-  icon: fas fa-user-graduate
-  text: Undergraduate Student
-
 programmer:
   icon: fas fa-code
   text: Programmer
-
-mascot:
-  icon: fas fa-dog
-  text: Mascot
