@@ -8,7 +8,7 @@ description: Smart Production Systems Lab at Soongsil University
 logo: images/logo.svg
 header: images/banner_ssu.jpg
 footer: images/banner_ssu.jpg
-url : https://younsoolee.github.io #<{{ site.url }}{{ site.baseurl }}/blog/start-blog/>
+url : https://spslab-ssu.github.io #<{{ site.url }}{{ site.baseurl }}/blog/start-blog/>
 baseurl: 
 # site social media and other links
 links:
