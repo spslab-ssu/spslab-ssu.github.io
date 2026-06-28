@@ -1,0 +1,14 @@
+{%- comment -%}
+  저자 목록을 렌더링합니다. _data/publications.yaml 의 authors 를 넘겨 사용합니다.
+  사용:  {% include pub-authors.html list=pub.authors %}
+  규칙:  me: true → <span class="me"> 로 강조,  corr: true → <sup>*</sup> 표시
+{%- endcomment -%}
+{%- for a in include.list -%}
+  {%- assign nm = a.name | default: a -%}
+  {%- if a.me -%}
+    <span class="me">{{ nm }}{% if a.corr %}<sup>*</sup>{% endif %}</span>
+  {%- else -%}
+    {{ nm }}{% if a.corr %}<sup>*</sup>{% endif %}
+  {%- endif -%}
+  {%- unless forloop.last %}, {% endunless -%}
+{%- endfor -%}

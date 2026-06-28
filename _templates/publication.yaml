@@ -1,0 +1,43 @@
+# ============================================================
+#  논문 추가용 템플릿 (복붙용)
+# ============================================================
+#  실제 논문 목록은 _data/publications.yaml 에 있습니다.
+#  아래 블록 중 맞는 유형을 복사해서, _data/publications.yaml 의
+#  해당 섹션(wip / journal_intl / journal_dom / conf_intl / conf_dom)
+#  목록 맨 위(최신순)에 붙여넣고 값을 채우면 됩니다.
+#
+#  ★ 개수(상단 숫자)는 자동으로 계산되므로 따로 고칠 필요가 없습니다. ★
+#
+#  저자 표기:
+#   • 일반 저자        :  - 이름
+#   • 우리 연구실(굵게) :  - { name: 이름, me: true }
+#   • 교신저자(* 표시)  :  - { name: 이름, me: true, corr: true }   (corr 만 단독 사용도 가능)
+# ============================================================
+
+
+# ── (1) 진행 중인 연구 → wip: 목록에 추가 ───────────────────
+# status: accepted (게재확정) | review (심사중) | status 줄 삭제 (표시 없음)
+  - title: "논문 제목"
+    status: review
+
+
+# ── (2) 저널 논문 → journal_intl: (국제) 또는 journal_dom: (국내) 목록에 추가 ──
+  - title: "논문 제목"
+    authors:
+      - First Author
+      - { name: Y. Lee, me: true, corr: true }
+      - Third Author
+    venue: "저널명"
+    detail: "권(호), 페이지, Mon. 연도"      # 예) 140, 103479, Apr. 2026
+    doi: "10.xxxx/xxxxx"                      # DOI 가 없으면 이 줄을 지웁니다
+
+
+# ── (3) 학술대회 발표 → conf_intl: (국제) 또는 conf_dom: (국내) 목록에 추가 ──
+# 국내 학회는 제목/저자를 한글로 적어도 됩니다.
+  - title: "발표 제목"
+    authors:
+      - First Author
+      - { name: Y. Lee, me: true }
+      - Third Author
+    venue: "학회명 (YEAR)"                     # 예) EURO 2025  /  대한산업공학회 춘계학술대회 (KIIE 2026)
+    detail: "도시, Mon. 연도"                  # 예) Leeds, UK, Jun. 2025
