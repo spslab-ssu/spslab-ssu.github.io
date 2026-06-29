@@ -80,8 +80,8 @@ journal_intl:
 
   - title: "A Robust Optimization Approach for E-bus Charging and Discharging Scheduling with Vehicle-to-Grid Integration"
     authors:
-      - M. Kang
-      - B. Lee
+      - { name: M. Kang, me: true}
+      - { name: B. Lee, me: true}
       - { name: Y. Lee, me: true, corr: true }
     venue: "Mathematics"
     detail: "13(9), 1380, May 2025"
@@ -125,9 +125,9 @@ journal_intl:
 journal_dom:
   - title: "Optimization of Electric Bus Charging and Discharging Schedules with Vehicle-to-Grid Technology"
     authors:
-      - M. Kang
-      - D. Min
-      - B. Lee
+      - { name: M. Kang, me: true}
+      - { name: D. Min, me: true}
+      - { name: B. Lee, me: true}
       - { name: Y. Lee, me: true, corr: true }
     venue: "The Transactions of the Korean Institute of Electrical Engineers"
     detail: "74(5), 761-774, May 2025"
@@ -178,29 +178,29 @@ conf_intl:
 conf_dom:
   - title: "State-of-Health를 고려한 전기차 배터리 교환 스테이션 운영 최적화"
     authors:
-      - 손성은
-      - 조정운
-      - 최민영
-      - 이혁진
+      - { name: 손성은, me: true }
+      - { name: 조정운, me: true }
+      - { name: 최민영, me: true }
+      - { name: 이혁진, me: true }
       - { name: 이연수, me: true }
     venue: "대한산업공학회 춘계학술대회 (KIIE 2025)"
     detail: "Jeju, Jun. 2025"
 
   - title: "이동형 충전로봇 기반 전기차 충전 스케줄링 최적화"
     authors:
-      - 최민영
-      - 이혁진
-      - 손성은
-      - 조정운
+      - { name: 최민영, me: true }
+      - { name: 이혁진, me: true }
+      - { name: 손성은, me: true }
+      - { name: 조정운, me: true }
       - { name: 이연수, me: true }
     venue: "대한산업공학회 춘계학술대회 (KIIE 2025)"
     detail: "Jeju, Jun. 2025"
 
   - title: "V2G 기술을 활용한 전기차 군집 기반 사업자의 운영 스케줄 최적화"
     authors:
-      - 강민규
-      - 민동욱
-      - 이보성
+      - { name: 강민규, me: true }
+      - { name: 민동욱, me: true }
+      - { name: 이보성, me: true }
       - { name: 이연수, me: true }
     venue: "대한산업공학회 춘계학술대회 (KIIE 2024)"
     detail: "Yeosu, May 2024"
@@ -215,7 +215,7 @@ conf_dom:
 
   - title: "A Decomposition Approach for the Parallel Line Lot-sizing and Scheduling Problem with Sequence-dependent Setup and Item Family"
     authors:
-      - Jinyeong Jeong
+      - J. Jeong
       - { name: Y. Lee, me: true }
       - K. Lee
     venue: "대한산업공학회 추계학술대회 (KIIE 2021)"

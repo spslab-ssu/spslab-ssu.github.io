@@ -7,9 +7,9 @@ nav:
 ---
 
 {%- comment -%}
-  이 페이지의 내용은 _data/publications.yaml 에서 자동으로 만들어집니다.
-  논문을 추가/수정/삭제하려면 _data/publications.yaml 만 고치면 되고,
-  상단의 개수(숫자)도 자동으로 다시 계산됩니다. 이 파일은 보통 건드릴 필요가 없습니다.
+이 페이지의 내용은 \_data/publications.yaml 에서 자동으로 만들어집니다.
+논문을 추가/수정/삭제하려면 \_data/publications.yaml 만 고치면 되고,
+상단의 개수(숫자)도 자동으로 다시 계산됩니다. 이 파일은 보통 건드릴 필요가 없습니다.
 {%- endcomment -%}
 
 <h1><i class="fas fa-book-open section-icon"></i> Publications</h1>
