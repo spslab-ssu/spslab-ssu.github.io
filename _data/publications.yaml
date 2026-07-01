@@ -22,8 +22,6 @@
 #   status: review    → "under review"(심사 중) 배지
 #   status 줄 자체를 지우면 → 제목만 표시
 wip:
-  - title: "Structure-Preserving Process Case Embeddings via Directed Graph Convolutional Networks"
-    status: accepted
   - title: "Closed-Loop Supply Chain Model with Third-Party Logistics–Based Return Management System: A Two-stage Stochastic Programming Approach"
     status: review
   - title: "A Robust Optimization Approach for Multi-Pack Battery Scheduling under Efficiency and State-of-Charge Uncertainty"
@@ -41,6 +39,15 @@ journal_intl:
     detail: "140, 103479, Apr. 2026"
     doi: "10.1016/j.omega.2025.103479"
 
+  - title: "An Approximate Dynamic Programming Approach to Wafer-Lot Scheduling for Parallel Multi-Chamber Equipment in Semiconductor Fabrication Lines"
+    authors:
+      - S. Hong
+      - { name: Y. Lee, me: true, corr: true }
+      - { name: K. Lee, corr: true }
+    venue: "International Journal of Production Research"
+    detail: "64(8), 2900-2925, Apr. 2026"
+    doi: "10.1080/00207543.2025.2584726"
+
   - title: "Self-Adaptive Prompt Engineering for Cost-Efficient Language Models: Switching between Chain-of-Thought and Direct Answer"
     authors:
       - Y. Kim
@@ -49,6 +56,15 @@ journal_intl:
     venue: "ICIC Express Letters"
     detail: "20(2), 199-207, Feb. 2026"
     doi: "10.24507/icicel.20.02.199"
+  
+  - title: "Structure-Preserving Process Case Embeddings via Directed Graph Convolutional Networks"
+    authors:
+      - H. Park
+      - { name: Y. Lee, me: true }
+      - C. Kang
+    venue: "ICIC Express Letters, Part B: Applications"
+    detail: "17(2), 183-189, Feb. 2026"
+    doi: "10.24507/icicelb.17.02.183"
 
   - title: "A Branch-and-Price Algorithm for the Parallel-line Lot-sizing and Scheduling Problem in Flat-panel Display Manufacturing Process"
     authors:
@@ -59,15 +75,6 @@ journal_intl:
     venue: "Omega"
     detail: "138, 103386, Jan. 2026"
     doi: "10.1016/j.omega.2025.103386"
-
-  - title: "An Approximate Dynamic Programming Approach to Wafer-Lot Scheduling for Parallel Multi-Chamber Equipment in Semiconductor Fabrication Lines"
-    authors:
-      - S. Hong
-      - { name: Y. Lee, me: true, corr: true }
-      - { name: K. Lee, corr: true }
-    venue: "International Journal of Production Research"
-    detail: "38(2), 1-26, Nov. 2025"
-    doi: "10.1080/00207543.2025.2584726"
 
   - title: "A Robust Optimization Approach for the Multi-Period Strip Cutting Problem with Multi-Cutter Slitting Machines"
     authors:
@@ -84,7 +91,7 @@ journal_intl:
       - { name: B. Lee, me: true}
       - { name: Y. Lee, me: true, corr: true }
     venue: "Mathematics"
-    detail: "13(9), 1380, May 2025"
+    detail: "13(9), 1380, May. 2025"
     doi: "10.3390/math13091380"
 
   - title: "Capacity Estimation for Semiconductor Wafer Fabrication Facilities via an Optimization Model based on Flexible Lead Times"
@@ -93,7 +100,7 @@ journal_intl:
       - { name: Y. Lee, me: true, corr: true }
       - { name: K. Lee, corr: true }
     venue: "IEEE Transactions on Semiconductor Manufacturing"
-    detail: "38(2), 292-310, May 2025"
+    detail: "38(2), 292-310, May. 2025"
     doi: "10.1109/TSM.2025.3547026"
 
   - title: "Valid Inequalities and Extended Formulations for Lot-sizing and Scheduling Problem with Sequence-dependent Setups"
@@ -130,7 +137,7 @@ journal_dom:
       - { name: B. Lee, me: true}
       - { name: Y. Lee, me: true, corr: true }
     venue: "The Transactions of the Korean Institute of Electrical Engineers"
-    detail: "74(5), 761-774, May 2025"
+    detail: "74(5), 761-774, May. 2025"
 
 
 # ── 국제 학술대회 (International Conferences) ────────────────
@@ -203,7 +210,7 @@ conf_dom:
       - { name: 이보성, me: true }
       - { name: 이연수, me: true }
     venue: "대한산업공학회 춘계학술대회 (KIIE 2024)"
-    detail: "Yeosu, May 2024"
+    detail: "Yeosu, May. 2024"
 
   - title: "An Optimization Model based on Flexible Lead Times for Semiconductor Wafer Fabrication"
     authors:
